@@ -1,0 +1,202 @@
+/*reset*/
+	*{
+		font-family: 'Ubuntu', sans-serif;
+	}
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+/*imporatando as fontes*/
+	@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/*header*/
+	body > header{
+		min-height: 200px;
+		background-color: #000;
+		color: #fff;
+		padding: 20px 0;
+	}
+	body > header > div > div.logo.col-sm-3, body > header > div > div.titulo.col-sm-9{
+		min-height: 160px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	body > header > div > div.titulo.col-sm-9 > h1{
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 26px;
+		font-weight: 600;
+	}
+
+
+/*main*/
+body > main{
+	background: #000;
+	background-size: cover;
+	min-height: 650px;
+}
+body > main > div > aside.col-sm-3{
+    min-height: 650px;
+    background: #000;
+    padding: 30px;
+}
+body > main > div > aside.col-sm-3 li{
+	width: 100%;
+	background-color: #272727;
+	padding: 5px;
+	min-height: 40px;
+	margin-bottom: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+body > main > div > aside.col-sm-3 li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    line-height: 35px;
+}
+body > main > div > section.principal.col-sm-9{
+    min-height: 650px;
+    padding: 50px 10px;
+    background: #a2a2a2;
+}
+body > main > div > aside > ul > li > div{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #fff;
+    opacity: 0;
+}
+body > main > div > aside > ul > li > div:hover{
+	opacity: 0.2;
+	transition: 0.5s;
+	border-left: 3px solid #d50000;
+	border-bottom: 3px solid #d50000;
+}
+body > main > div > section > div > form > table > thead > tr{
+	background: #333;
+}
+body > main > div > section > div > form > table > thead > tr > td{
+	padding: 10px;
+	color: #fff;
+	border: 1px solid #fff;
+}
+body > main > div > section > div > form > table > tbody > tr{
+	background: #ded8d8;
+}
+body > main > div > section > div > form > table > tbody > tr > td{
+	padding: 10px;
+	color: #424242;
+	border: 1px solid #424242;
+}
+
+/*footer*/
+body > footer{
+    min-height: 125px;
+    background: #000;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-cadastrar{
+	padding: 20px;
+}
+html body main .formulario-cadastrar fieldset .form-group{
+	min-height: 30px;
+	margin-bottom: 20px;
+}
+html body main .formulario-cadastrar fieldset label{
+	display: block;
+	margin-bottom: 5px;
+	font-family: "Ubuntu", sans-serif;
+	font-size: 14px;
+}
+html body main .formulario-cadastrar fieldset input, html body main .formulario-cadastrar fieldset textarea, html body main .formulario-cadastrar fieldset select{
+	width: 100%;
+	margin-bottom: 20px;	
+	min-height: 30px;
+	display: block;
+}
+
+html body main .formulario-cadastrar fieldset{
+	min-height: 200px;
+	border: 1px solid #655553;
+	border-radius: 10px;
+	float: left;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 20px;
+	display: flex;
+}
+
+#descricao{
+	width: 100%;
+	height: 420px;
+}
+#dados{
+	width: 98%;
+	margin-right: 1%;
+	margin-left: 1%;
+
+}
+body > main > div > section > div > form > div{
+	width: 100%;
+	text-align: center;
+}
+body > main > div > section > h2{
+	width: 100%;
+	font-size: 26px;
+	font-family: "Ubuntu", sans-serif;
+	text-align: center;
+}
+body > main > div > section > div.formulario-pesquisa > form{
+	padding: 20px;
+	text-align: center;
+}
+body > main > div > section > div.formulario-pesquisa > form > label{
+	width: 100%;
+	margin-bottom: 5px;
+}
+body > main > div > section > div.formulario-pesquisa > form > input{
+	width: 100%;
+	margin-bottom: 15px;
+}
+body > main > div > section > div.formulario-pesquisa > form > input[type="submit"]:nth-child(9){
+	width: 25%;
+}
